@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divya Bharathi.S - Portfolio</title>
+  <style>
+    /* Google Font */
+    @import url( 'http://localhost/devenv/developer-framework/icons/ironman.jpg');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.3);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      font-size: 22px;
+      color: #9f7bff;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #9f7bff;
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 20px 50px;
+    }
+
+    .hero img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #9f7bff;
+      box-shadow: 0 0 40px #9f7bff;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero h2 span {
+      color: #9f7bff;
+    }
+
+    .hero p {
+      color: #cfcfcf;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* Sections */
+    section {
+      padding: 60px 10%;
+    }
+
+    section h3 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      color: #9f7bff;
+    }
+
+    .skills-list, .projects-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: translateY(-5px);
+    }
+
+    /* Contact */
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    .contact a {
+      color: #9f7bff;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.4);
+      margin-top: 40px;
+      font-size: 14px;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Divya Bharathi.S</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section (Center Photo) -->
+  <section class="hero">
+    <img src="divya.jpg" alt="Profile">
+    <h2>Hi, I'm <span>Divya Bharathi.S</span></h2>
+    <p>2nd Year B.Sc IT Student | Passionate Full-Stack Developer</p>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I'm a B.Sc IT student specializing in web technologies and modern software development.
+      My goal is to create innovative and responsive applications with elegant UI/UX design.
+      Passionate About Building Responsive and User-Friendly Websites 
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h3>Skills</h3>
+    <div class="skills-list">
+      <div class="card">HTML5 / CSS3</div>
+      <div class="card">JavaScript (ES6+)</div>
+      <div class="card">React.js</div>
+      <div class="card">Node.js</div>
+      <div class="card">Python</div>
+      <div class="card">SQL / MongoDB</div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h3>Projects</h3>
+    <div class="projects-list">
+      <div class="card">
+        <h4>Portfolio Website</h4>
+        <p>Responsive personal portfolio site built with HTML, CSS, and JS.</p>
+      </div>
+      <div class="card">
+        <h4>College Project</h4>
+        <p>Mini project featuring shopping cart and product catalog in React.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h3>Contact Me</h3>
+    <p>Email: <a href="mailto:skynetdivyabharathi.s@gmail.com">skynetdivyabharathi.s@gmail.com</a></p>
+    <p>github: <a href="https://sdivyabharathi007-tech.github.io/Portfolio/">https://sdivyabharathi007-tech.github.io/Portfolio/</a></p>
+    <p>Phone: <a href="tel:+91 8148555237">+91 8148555237</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Divya Bharathi | All Rights Reserved
+  </footer>
+</body>
+</html>
