@@ -114,7 +114,8 @@
         .hero-image .img-container {
             width: 350px;
             height: 450px;
-            background: url('divya.jpg') center/cover;
+            /* Replace the URL below with 'divya.jpg' once you have the file in your folder */
+            background: url('db.jpg') center/cover;
             border-radius: 100px 20px 100px 20px;
             border: 8px solid white;
             box-shadow: var(--shadow);
@@ -278,11 +279,34 @@
             border-radius: 50%;
         }
 
+        /* --- Footer --- */
         footer {
             text-align: center;
-            padding: 3rem;
-            font-weight: 300;
-            color: #888;
+            padding: 3rem 10%;
+            background: var(--glass);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .footer-text {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .shyam-link {
+            display: inline-block;
+            margin-top: 0.5rem;
+            font-weight: 600;
+            color: var(--deep-pink);
+            text-decoration: none;
+            transition: 0.3s;
+            border-bottom: 1px dashed var(--deep-pink);
+        }
+
+        .shyam-link:hover {
+            color: var(--primary-pink);
+            border-bottom-style: solid;
         }
 
         /* --- Mobile Responsive --- */
@@ -469,7 +493,8 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 Divya Bharathi. Created with 💖 and Code.</p>
+        <p class="footer-text">&copy; 2025 Divya Bharathi. Created with 💖 and Code.</p>
+        <p class="footer-text">Designed & Developed by <a href="https://shyam.world" class="shyam-link" target="_blank">SHYAM</a></p>
     </footer>
 
     <script>
